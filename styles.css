@@ -105,3 +105,16 @@ p {
     font-size: 18px;
     font-weight: 300;
 }
+
+@media only screen 
+and (max-device-width : 480px) {
+    
+    h2 {
+        font-weight: 100;
+        font-size: 22px;
+        text-align: center;
+        font-family: CamptonBook;
+        cursor: default;
+    }
+
+}
