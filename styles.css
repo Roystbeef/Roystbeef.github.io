@@ -107,11 +107,11 @@ p {
 }
 
 @media only screen 
-and (max-device-width : 480px) {
+and (max-width : 500px) {
     
     h2 {
         font-weight: 100;
-        font-size: 5px;
+        font-size: 22px;
         text-align: center;
         font-family: CamptonBook;
         cursor: default;
