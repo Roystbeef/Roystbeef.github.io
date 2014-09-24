@@ -35,7 +35,7 @@ $(document).ready(function() {
 	});
 
 	$('#coder').click(function() {
-		/if(page != coder) {
+		if(page != coder) {
 			page = coder;
 			update();
 			$(this).animate({color: '#03c8fa'}, 250);
