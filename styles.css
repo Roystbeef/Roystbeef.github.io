@@ -1,0 +1,106 @@
+html, body, div, span, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+img, ins, kbd, q, s, samp,
+small, strike, strong, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+ 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    width: 480px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: CamptonLight;
+    src: url('Assets/Fonts/rene.bieder_campton.light-webfont.ttf');
+}
+
+@font-face {
+    font-family: CamptonBook;
+    src: url('Assets/Fonts/rene.bieder_campton.book-webfont.ttf');
+}
+
+@font-face {
+    font-family: CamptonMedium;
+    src: url('Assets/Fonts/rene.bieder_campton.medium-webfont.ttf');
+}
+
+@font-face {
+    font-family: MuseoLight;
+    src: url('Assets/Fonts/museo_slab_1-webfont.ttf');
+}
+
+@font-face {
+    font-family: MuseoMedium;
+    src: url('Assets/Fonts/museo_slab-webfont.ttf');
+}
+
+body {
+    background-color: #ecf0f1;
+    color: #2e4259;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    text-align: center;
+    font-family: CamptonLight;
+    font-weight: 100;
+    cursor: default;
+}
+
+h1 span {
+    font-family: CamptonMedium;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 28px;
+    text-align: center;
+    font-family: CamptonBook;
+    cursor: default;
+}
+
+h2 span {
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+p {
+    font-family: MuseoLight;
+    font-size: 18px;
+    font-weight: 300;
+}
