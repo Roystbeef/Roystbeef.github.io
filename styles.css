@@ -111,7 +111,7 @@ and (max-device-width : 480px) {
     
     h2 {
         font-weight: 100;
-        font-size: 22px;
+        font-size: 5px;
         text-align: center;
         font-family: CamptonBook;
         cursor: default;
