@@ -16,7 +16,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 body {
     line-height: 1;
-    overflow:hidden;
 }
 ol, ul {
     list-style: none;
@@ -122,6 +121,7 @@ p {
     position: relative;
     background-color: #ecf0f1;
     z-index: 1;
+    margin-bottom: 20px;
 }
 
 .break::before {
@@ -131,7 +131,7 @@ p {
     max-width: 30em;
     display: inline-block;
     position: absolute;
-    margin-top: 15px;
+    margin-top: 0.5em;
     right: 0;
     z-index: -1;
 }
@@ -142,27 +142,8 @@ p {
     cursor: default;
 }
 
-.projectTitle {
-    clear:both;
-    margin-top: 20px;
-    font-size: 19px;
-    float: left;
-}
-
-h3 a{
-    color: #2e4259;
-    font-family: CamptonBook;
-    text-decoration: none;
-}
-
-.projectContent {
-    clear:left;
-    float: left;
-}
-
 .projectPic {
-    clear:right;
-    float: right;
+    width: 45%;
 }
 
 @media only screen 
