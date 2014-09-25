@@ -237,4 +237,8 @@ and (max-width : 500px) {
         cursor: default;
     }
 
+    .projectPic {
+        margin: auto;
+    }
+
 }
