@@ -239,6 +239,7 @@ and (max-width : 500px) {
 
     .projectPic {
         margin: auto;
+        margin-top: 5px;
     }
 
 }
