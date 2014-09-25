@@ -16,6 +16,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 body {
     line-height: 1;
+    overflow:hidden;
 }
 ol, ul {
     list-style: none;
@@ -56,6 +57,11 @@ table {
 }
 
 @font-face {
+    font-family: CamptonSemiBold;
+    src: url('Assets/Fonts/rene.bieder_campton.semibold-webfont.ttf');
+}
+
+@font-face {
     font-family: MuseoLight;
     src: url('Assets/Fonts/museo_slab_1-webfont.ttf');
 }
@@ -70,6 +76,9 @@ body {
     color: #2e4259;
 }
 
+.header{
+}
+
 h1 {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -81,7 +90,7 @@ h1 {
 }
 
 h1 span {
-    font-family: CamptonMedium;
+    font-family: CamptonSemiBold;
 }
 
 h2 {
@@ -101,9 +110,59 @@ h2 span {
 }
 
 p {
+    color: #737373;
     font-family: MuseoLight;
     font-size: 18px;
     font-weight: 300;
+}
+
+.break {
+    margin-top: 20px;
+    font-family: CamptonBook;
+    position: relative;
+    background-color: #ecf0f1;
+    z-index: 1;
+}
+
+.break::before {
+    content: "";
+    border-top: 2px solid #2e4259;
+    width: 100%;
+    max-width: 30em;
+    display: inline-block;
+    position: absolute;
+    margin-top: 15px;
+    right: 0;
+    z-index: -1;
+}
+
+.break span {
+    background: #ecf0f1;
+    padding: 0 15px;
+    cursor: default;
+}
+
+.projectTitle {
+    clear:both;
+    margin-top: 20px;
+    font-size: 19px;
+    float: left;
+}
+
+h3 a{
+    color: #2e4259;
+    font-family: CamptonBook;
+    text-decoration: none;
+}
+
+.projectContent {
+    clear:left;
+    float: left;
+}
+
+.projectPic {
+    clear:right;
+    float: right;
 }
 
 @media only screen 
