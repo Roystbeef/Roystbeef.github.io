@@ -87,8 +87,31 @@ function updateHtml() {
 			html += 'I didn&#39t grow up thinking that I would become a software developer. Like many others in my first grade class, I too, aspired to become Batman. I started to dwell in my basement, stay up late into the night, and wear an obscene amount of black. But after puberty hit, I came to the sad realization that beating criminals to a pulp just wasn&#39t what I was cut out for. But I couldn&#39t let all these bat-like qualities go to waste, so I made most logical decision I could and became a programmer. Anyways, here are my projects:';
 			html += '</p>';
 			html += '<h2 class="break"><span>PROJECTS</span></h2>';
-			html += "<img class='projectPic' src='Assets/Images/AmishHero.png'></img>";
-
+			html += "<div class='pure-g'>";
+			html += "<figure class='projectPic pure-u-lg-1-2 pure-u-md-1-2 pure-u-sm-1-1'>";
+			html += 	"<img src='Assets/Images/AmishHero.png'></img>";
+			html += '<figcaption>';
+			html += "<a href='http://amishhero.com' target='_blank'><div class='projectButton'></div>";
+			html += 	"<h3>AMISH<br>HARVEST<br>HERO</h3></a>";
+			html += '</figcaption>';
+			html += '</figure>';
+			html += "<figure class='projectPic pure-u-lg-1-2 pure-u-md-1-2 pure-u-sm-1-1'>";
+			html += 	"<img src='Assets/Images/PaletteTown.png'></img>";
+			html += '<figcaption>';
+			html += "<a href='http://palette.town' target='_blank'><div class='projectButton'></div>";
+			html += 	"<h3>PALETTE<br>TOWN</h3>";
+			html += '</figcaption>';
+			html += '</figure>';
+			html += '</div>';
+			html += "<div class='pure-g'>";
+			html += "<figure class='projectPic pure-u-lg-1-2 pure-u-md-1-2 pure-u-sm-1-1'>";
+			html += 	"<img src='Assets/Images/YTWall.png'></img>";
+			html += '<figcaption>';
+			html += "<a href='http://ytwall.com' target='_blank'><div class='projectButton'></div>";
+			html += 	"<h3>YT WALL</h3></a>";
+			html += '</figcaption>';
+			html += '</figure>';
+			html += '</div>';
 			break;
 		case designer:
 			html += '<p>Coming Soon!</p>';

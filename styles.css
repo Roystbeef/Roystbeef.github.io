@@ -113,12 +113,13 @@ p {
     font-family: MuseoLight;
     font-size: 18px;
     font-weight: 300;
+    margin-bottom: 20px;
 }
 
 .break {
-    margin-top: 20px;
+/*    text-align: left;*/
     font-family: CamptonBook;
-    position: relative;
+    position: relative; 
     background-color: #ecf0f1;
     z-index: 1;
     margin-bottom: 20px;
@@ -127,6 +128,7 @@ p {
 .break::before {
     content: "";
     border-top: 2px solid #2e4259;
+    opacity: 0.7;
     width: 100%;
     max-width: 30em;
     display: inline-block;
@@ -142,9 +144,87 @@ p {
     cursor: default;
 }
 
+
+
 .projectPic {
-    width: 45%;
+    margin: 0;
+    margin-top: 5px;
+    position: relative;
+/*    padding: 2px;*/
+/*    margin-right: 2%;*/
 }
+
+.projectPic img {
+    width: 98%;
+}
+
+.projectPic h3 {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    font-family: CamptonLight;
+    font-weight: 100;
+    font-size: 30px;
+    opacity: 0;
+    color: #ecf0f1;
+    cursor: pointer;
+}
+
+.projectButton/*figcaption::before*/ {
+    position: absolute;
+    content: '';
+    background: #2e4259;
+    width: 98%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.projectPic:hover .projectButton/*figcaption::before*/ {
+    opacity: 0.7;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.projectPic:hover h3 {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+/*figure.projectPic figcaption::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+    content: '';
+    opacity: 0;
+    transform: translated3d(0, 50%, 0);
+}
+
+figure.projectPic h3 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #484c61;
+    transition: transform 0.35s, color 0.35s;
+    transform: translated3d(0, -50%, 0);
+}
+
+figure.projectPic:hover h3 {
+    color: #fff;
+    transform: translated3d(0, -50%, 0) translated3d(0,-40px,0);
+}
+
+figure.projectPic:hover figcaption::before ,
+figure.projectPic:hover p {
+    opacity: 1;
+    transform: translated3d(0, 0, 0);
+}*/
+
 
 @media only screen 
 and (max-width : 500px) {
