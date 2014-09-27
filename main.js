@@ -7,6 +7,24 @@ var yoyoer = 3;
 $(document).ready(function() {
 	update();
 
+	$('#name').hover(function() {
+		$(this).animate({color: '#737373'}, 250);
+	}, function() {
+		$(this).animate({color: '#2e4259'}, 250);
+	});
+
+	$('#name').click(function() {
+		if(page != landing) {
+			page = landing;
+			update();
+			$('#coder').animate({color: '#2e4259'}, 250);
+			$('#designer').animate({color: '#2e4259'}, 250);
+			$('#yoyoer').animate({color: '#2e4259'}, 250);
+			// $('h2 span').css('color', '#737373');
+			// $(this).css('color', '#03c8fa');
+		}
+	});	
+
 	$('#coder').hover(function() {
 		$(this).animate({color: '#737373'}, 250);
 	}, function() {
@@ -79,8 +97,9 @@ function update() {
 function updateHtml() {
 	var html = '';
 	switch(page) {
-		// case landing:
-		// 	html += '';
+		 case landing:
+		 	html += '';
+		 	break;
 
 		case coder:
 			html += '<p>';
