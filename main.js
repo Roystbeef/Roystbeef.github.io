@@ -116,6 +116,9 @@ function updateHtml() {
 		case designer:
 			html += '<p>There&#39s a story I like to refer to when people ask me why I wanted to get into design. It&#39s called The Ugly Barnacle. Once, there was an ugly barnacle. He was so ugly that everyone died. My goal is to get rid of the ugly barnacles in products, because sometimes they&#39re so ugly that everyone dies, and I don&#39t want that.</p>';
 			break;
+		case yoyoer:
+			html += '<p>Yoyos are stupid and I hate them.</p>';
+			break;
 	}
 	return html;
 }
