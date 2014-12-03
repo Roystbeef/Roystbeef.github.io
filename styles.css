@@ -158,6 +158,7 @@ p {
 
 .projectPic img {
     width: 98%;
+    border-radius: 5px;
 }
 
 .projectPic h3 {
@@ -183,6 +184,7 @@ p {
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .projectPic:hover .projectButton/*figcaption::before*/ {
