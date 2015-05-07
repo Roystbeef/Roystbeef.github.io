@@ -29,6 +29,7 @@ body {
   margin: 0 auto;
   text-align: center;
   max-width: 36em;
+  width: 90%;
 }
 
 h1 {
@@ -103,4 +104,32 @@ i:hover {
 
 li:first-child {
   margin-left: 0;
+}
+
+/*@media all and (min-width: 1281px){
+  .home{font-size:25px;}
+}
+
+@media all and (min-width: 1025px) and (max-width: 1280px) {
+  .home{font-size:22px;}
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .home{font-size:18px;}
+}*/
+
+@media all and (min-width: 481px) and (max-width: 570px) {
+  h2{font-size:0.75em;}
+}
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+  h1{font-size:2em;}
+  h2{font-size:0.6em;}
+  li{font-size:1.6em;}
+}
+
+@media all and (max-width: 320px) {
+  h1{font-size:1.5em;}
+  h2{font-size:0.55em;}
+  li{font-size:2em;}
 }
