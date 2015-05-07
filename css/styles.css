@@ -73,11 +73,28 @@ li {
   display: inline;
   margin-left: 0.7em;
   cursor: pointer;
+  font-size: 1.2em;
 }
 
 i {
   transition-duration: 0.3s;
   color: #aaa;
+}
+
+a {
+  transition-duration: 0.3s;
+  text-align: center;
+  color: #ccc;
+  font-family: Raleway;
+  font-weight: 100;
+  line-height: 1.5em;
+  /*letter-spacing: 0.5em;*/
+  font-size: 1em;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff
 }
 
 i:hover {
@@ -87,32 +104,3 @@ i:hover {
 li:first-child {
   margin-left: 0;
 }
-
-/*#logo {
-  height: 55px;
-}
-
-.navbar-brand {
-  padding: 10px;
-}
-
-.navbar {
-  background-color: rgba(0,0,0,0.8) ;
-  height: 75px;
-}
-
-.navbar-right {
-  padding: 10px;
-  font-family: Lato;
-  font-size: 1.5em;
-  font-weight: 300;
-}
-
-.navbar-default .navbar-nav > li > a {
-  color: #ffffff;
-  transition-duration: 0.3s;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: #eeeeee;
-}*/
