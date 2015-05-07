@@ -1,4 +1,3 @@
-var mobile = false;
 var Model = {
   // QuadTree: function(level, bounds) {
   //   this.level = level;
@@ -119,14 +118,6 @@ var Model = {
     }
   },
   resize: function(cWidth, cHeight) {
-    if(cWidth < 500 || cHeight < 500)
-      mobile = true;
-    else {
-      if(mobile) {
-        Controller.initLoop();
-        mobile = false;
-      }
-    }
     for(var i = 0; i < this.particles.length; i++) {
       this.particles[i].x *= cWidth / this.width;
       this.particles[i].vX *= cWidth / this.width;
@@ -171,9 +162,6 @@ var Controller = {
     }, 1000 / Controller.fps);
   },
   loop: function() {
-    if(mobile) {
-      clearInterval(this.loopInterval);
-    }
     var now = Date.now();
     var delta = (now - Controller.then) / 1000;
     View.clear();
@@ -210,8 +198,6 @@ var View = {
     View.canvas.width = this.width;
     View.canvas.height = this.height;
     Controller.addCanvasEventListener();
-    if(this.width < 500 || this.height < 500)
-      mobile = true;
   },
   clear: function() {
     View.ctx.clearRect(0, 0, this.width, this.height);

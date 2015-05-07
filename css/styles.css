@@ -120,16 +120,19 @@ li:first-child {
 
 @media all and (min-width: 481px) and (max-width: 570px) {
   h2{font-size:0.75em;}
+  #background{display:none;}
 }
 
 @media all and (min-width: 321px) and (max-width: 480px) {
   h1{font-size:2em;}
   h2{font-size:0.6em;}
   li{font-size:1.6em;}
+  #background{display:none;}
 }
 
 @media all and (max-width: 320px) {
   h1{font-size:1.5em;}
   h2{font-size:0.55em;}
   li{font-size:2em;}
+  #background{display:none;}
 }
