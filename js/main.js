@@ -193,7 +193,7 @@ var View = {
   canvas: null,
   ctx: null,
   init: function() {
-    View.canvas = document.getElementById("background");
+    View.canvas = document.getElementById("canvas");
     View.ctx = View.canvas.getContext("2d");
     View.canvas.width = this.width;
     View.canvas.height = this.height;
