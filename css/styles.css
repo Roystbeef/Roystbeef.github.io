@@ -151,6 +151,23 @@ nav>a {
 	display: none;
 }
 
+.cipher {
+	opacity: 0;
+	background-image: url('/images/cipher.png');
+	left: calc(62.5vw + 329px);
+	z-index: 99;
+	top: 21px;
+	height: 101px;
+	width: 74px;
+	position: absolute;
+	transition: opacity 3s;
+	cursor: pointer;
+}
+
+.cipher:hover {
+	opacity: 1;
+}
+
 @media only screen and (max-width: 700px) {
   body {
 		flex-direction: column;
